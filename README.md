@@ -7,6 +7,12 @@ The player loses if he has no possible moves left.
 ## Algorithms
 In this game, I implemented algorithms such as A*, deep first, branch first, and unit cost to compare the difference between them in terms of speed and memory usage.
 
+- A* is a search algorithm that combines the advantages of deep first and branch first methods.
+- Deep first search explores the nodes that are closer to the goal first, but may miss shorter paths or get stuck in loops.
+- Branch first search explores all the nodes at the same level before moving to the next level, but may waste time on irrelevant paths.
+- A* uses a heuristic function to estimate the unit cost of reaching the goal from each node, and selects the node with the lowest cost.
+- Unit cost is the sum of the actual cost of reaching a node and the estimated cost of reaching the goal from that node.
+
 ## Testing
 I ran them on different maps and recorded the time and steps they took to reach the flag.
 Here are some of the results:
